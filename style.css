@@ -1,0 +1,132 @@
+body {
+    font-family: serif;
+    background-color: rgb(242, 248, 182);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #f257b4, #4ac1f5); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+header::before, header::after {
+    content: ''; 
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: float 1s infinite ease-in-out;
+}
+
+header::before { top: 20px; left: 20px; }
+header::after { bottom: 20px; right: 20px; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #4ac1f5; 
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+    background-color: #f257b4; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-3px);  
+}
+
+
+
+section {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(133, 236, 154);
+    color: white;
+    padding: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(228, 93, 179);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: rgb(112, 197, 246);
+    transform: translateY(-3px); 
+ 
+
+}
+.feature-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(73, 172, 93); 
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 5px 0; 
+}
+
+.feature-button:hover {
+    background-color: rgb(223, 235, 98);
+    transform: translateY(-3px);
+}
+
+
+
